@@ -22,10 +22,10 @@ $(BUILD)/%.c.o: $(SRC)/%.c | $(BUILD)
 	$(CC) $(CFLAGS) $(INC_DIRS) -o $@ -c $<
 
 compile: $(SOURCES)
-	@echo "-- Compiling"
+	@echo "-- Compiling ($(CFLAGS))"
 
 link: $(OBJECTS)
-	@echo "-- Linking $(MAIN)"
+	@echo "-- Linking $(MAIN) ($(CFLAGS))"
 	$(CC) $(CFLAGS) $(INC_DIRS) -o $(MAIN) $(OBJECTS)
 
 run: compile link
