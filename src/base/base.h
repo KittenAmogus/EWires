@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 
+#include "temp.h"
 #include "point.h"
 #include "voltage.h"
 

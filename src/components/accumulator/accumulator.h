@@ -8,11 +8,9 @@ typedef struct {
   Point *pointPos;
   Point *pointNeg;
 
-  Voltage *voltage;
+  Voltage voltage;
+  Temperature temp;
 
-  const uint16_t maxTemp;
-
-  uint16_t temp;
   uint16_t id;
 
 } PACKED Accumulator;
